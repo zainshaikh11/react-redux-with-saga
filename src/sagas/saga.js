@@ -12,6 +12,6 @@ function* activityfetchAsync() {
   yield put({ type: FETCH_ACTIVITY_ASYNC, payload: data });
 }
 
-export function* watchAgeUp() {
+export function* activityFetch() {
   yield takeLatest(FETCH_ACTIVITY, activityfetchAsync);
 }
